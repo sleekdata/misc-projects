@@ -14,7 +14,7 @@ AIRFLOW_VERSION=3.0.4
 sudo apt update
 
 # Install the required Python version along with necessary packages
-sudo apt install -y python${PYTHON_VERSION} python${PYTHON_VERSION}-venv python${PYTHON_VERSION}-dev build-essential
+sudo apt install -y python${PYTHON_VERSION} python${PYTHON_VERSION}-venv python${PYTHON_VERSION}-dev python3-pip build-essential
 
 # Create a virtual environment for Airflow and activate it
 mkdir -p ~/venvs
