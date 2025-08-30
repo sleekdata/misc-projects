@@ -7,7 +7,7 @@ set -e
 # Update the PYTHON_VERSION and AIRFLOW_VERSION variables below accordingly — no other changes to the script are needed.
 
 # Update versions here as per the instructions above
-AIRFLOW_VERSION=3.0.4
+AIRFLOW_VERSION=3.0.6
 PYTHON_VERSION=3.12
 
 # Update the packages using sudo apt update
