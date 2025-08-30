@@ -1,10 +1,10 @@
-Option 1: 
+**Option 1: **
 
 Copy the individual commands from airflow-setup.sh and airflow-start.sh one by one, and run them in your Ubuntu terminal.
 
 
 
-Option 2: 
+**Option 2: **
 
 Create script files to set up Airflow (Executable scripts in one go).
 
