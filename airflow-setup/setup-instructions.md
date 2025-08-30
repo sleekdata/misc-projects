@@ -4,6 +4,8 @@ Copy the individual commands from airflow-setup.sh and airflow-start.sh one by o
 
 
 
+
+
 **Option 2: **
 
 Create script files to set up Airflow (Executable scripts in one go).
