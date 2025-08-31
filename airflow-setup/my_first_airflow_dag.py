@@ -5,7 +5,7 @@ from datetime import datetime
 with DAG(
     dag_id='my_first_airflow_dag',
     start_date=datetime(2025, 8, 1),
-    schedule='0 9 * * *',
+    schedule='@daily', 
     catchup=False,
 ) as dag:
 
