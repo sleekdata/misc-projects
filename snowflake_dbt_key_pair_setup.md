@@ -6,7 +6,12 @@ Step 1: Generate private key
 `openssl genrsa 2048 | openssl pkcs8 -topk8 -v2 des3 -inform PEM -out rsa_private_key.p8`
 
 Step 2: Generate public key  
-`openssl rsa -in rsa_private_key.p8 -pubout -out rsa_public_key.pub`
+You can choose either option:  
+**Option A – Encrypted private key (requires passphrase - more secure)**: 
+`openssl genrsa 2048 | openssl pkcs8 -topk8 -v2 des3 -out rsa_private_key.p8`  
+
+**Option B – Unencrypted private key (no passphrase)**: 
+`openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out rsa_private_key.p8`
 
 ## Run in Snowflake CLI or Snowsight
 
