@@ -40,3 +40,6 @@ ALTER USER <username> SET RSA_PUBLIC_KEY='<public_key_string>';
 * This setup establishes a **secure handshake** between the external system and Snowflake.
 * The external system can connect and be verified by Snowflake using the public key, **without sending a password**.
 * This method is secure and suitable for **automated workflows** and **system-to-system passwordless connections**.
+* Note: A passphrase can be used to protect the private key locally within the external system. This passphrase never leaves the system and is not transmitted to Snowflake.
+
+
