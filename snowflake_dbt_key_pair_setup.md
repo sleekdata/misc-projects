@@ -36,7 +36,7 @@ ALTER USER <username> SET RSA_PUBLIC_KEY='<public_key_string>';
 
 * With the help of OpenSSL, a **private key** and a matching **public key** are generated. The public key is derived from the private key, making it unique and usable only with that private key.
 * **Snowflake** (user account) is configured with the **public key**.
-* The **private key** is configured in the external system or tool that will connect to Snowflake, such as **DBT**.
+* The **private key** is stored securely in the external system or tool that will connect to Snowflake **(e.g., DBT, ETL tools, CI/CD pipelines)**.
 * This setup establishes a **secure handshake** between the external system and Snowflake.
 * The external system can connect and be verified by Snowflake using the public key, **without sending a password**.
 * This method is secure and suitable for **automated workflows** and **system-to-system passwordless connections**.
